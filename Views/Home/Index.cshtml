@@ -1,0 +1,39 @@
+﻿<h3>Jewelleries</h3>
+<h5>Note: To Update Record Select Options First and Then Press Update</h5>
+<form>
+    <label for="type">Choose a Jewellery Type:</label>
+
+    <select name="type" id="type">
+        <option value="Locket">Locket</option>
+        <option value="Bracelet">Bracelet</option>
+        <option value="Ring">Ring</option>
+        <option value="Earings">Earings</option>
+    </select>
+    <br />
+    <label for="metal">Choose a Jewellery Metal:</label>
+    <select name="metal" id="metal">
+        <option value="Silver">Silver</option>
+        <option value="Platinum">Platinum</option>
+        <option value="Gold">Gold</option>
+        <option value="StainlessSteel">StainlessSteel</option>
+    </select>
+    <br />
+    <label for="price">Price:</label>
+    <input type="text" id="price" name="price" placeholder="enter price here..."><br>
+    <label for="gem">Is Gems Fiited:</label>
+    <input type="checkbox" id="gem" name="gem"><br><br>
+    <input type="button" class="btn-save" value="Save" id="insert" onclick="SaveJewellery(this)">
+</form>
+
+
+<table id="JewelleryTable">
+    <thead>
+        <tr>
+            <th width="100px">Type</th>
+            <th width="100px">Metal</th>
+            <th width="100px">Price</th>
+            <th width="100px">Gems Fitted</th>
+            <th width="200px">Actions</th>
+        </tr>
+    </thead>
+</table> 
